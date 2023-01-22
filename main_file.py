@@ -13,4 +13,4 @@ st.write(pd.DataFrame({
 path = 'Combined_sales_data.csv'
 df = pd.read_csv(path, encoding='ISO-8859-1')
 
-st.write(df) 
+st.write(df.head()) 
