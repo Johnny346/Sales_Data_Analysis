@@ -5,5 +5,7 @@ import numpy as np
 
 st.title('Sales Data Analysis & Report')
 
-all_data = pd.read_csv(r"Sales_Data_Analysis/Combined_sales_data.csv")
-st.write(all_data) 
+st.write(pd.DataFrame({
+    'first column': [1, 2, 3, 4],
+    'second column': [10, 20, 30, 40]
+}))
