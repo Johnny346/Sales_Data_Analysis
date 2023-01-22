@@ -14,3 +14,11 @@ path = 'Combined_sales_data.csv'
 df = pd.read_csv(path, encoding='ISO-8859-1')
 
 st.write(df.head()) 
+
+
+## ----------------------
+## add month column
+all_data['Month'] = df['Order Date'].str[0:2]
+all_data['Month'] = df['Month'].astype('int32')
+
+st.write(all_data.head()) 
